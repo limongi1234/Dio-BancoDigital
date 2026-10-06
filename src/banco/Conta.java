@@ -54,12 +54,12 @@ public abstract class Conta
     {
         if (valor <= 0) 
         {
-            System.out.println("Valor inválido para saque.");
+            System.out.println("Valor invÃ¡lido para saque.");
             return false;
         } else if (this.saldo < valor) 
           {
 
-            System.out.println("Seu saldo é insuficiente!!!");
+            System.out.println("Seu saldo Ã© insuficiente!!!");
             return false;
           } else 
           {
@@ -76,20 +76,20 @@ public abstract class Conta
 
         if (this.numeroDaConta == destino.numeroDaConta) 
         {
-            System.out.println("Transferência não realizada!");
-            System.out.println("A conta destino é igual à conta origem.");
+            System.out.println("TransferÃªncia nÃ£o realizada!");
+            System.out.println("A conta destino Ã© igual Ã  conta origem.");
             return false;
         } else 
         {
             if (valor <= 0) 
             {
-                System.out.println("Valor inv�lido para transfer�ncia.");
+                System.out.println("Valor inválido para transferência.");
                 System.out.println("Por favor, revise o valor desejado e tente novamente.");
                 return false;
             } else if (this.saldo < valor) 
             {
-                System.out.println("Seu saldo � insuficiente!!!");
-                System.out.println("Transfer�ncia n�o realizada");
+                System.out.println("Seu saldo é insuficiente!!!");
+                System.out.println("Transferência não realizada");
                 return false;
             } else 
             {
@@ -97,7 +97,7 @@ public abstract class Conta
                 this.saldo = this.saldo - taxaTransferencia;
                 destino.saldo = destino.saldo + valor;
                 totalMovimentacoes++;
-                System.out.println("Transfer�ncia realizada com sucesso!!!");
+                System.out.println("Transferência realizada com sucesso!!!");
                 return true;
             }
         }
@@ -108,8 +108,8 @@ public abstract class Conta
         totalMovimentacoes++;
         if (valor <= 0) 
         {
-            System.out.println("Depósito com envelope vazio é proibido!!! Depósito com R$ " + valor + " é inválido.");
-            System.out.println("Depósitos vazios geram despesas e, convencionalmente, será cobrada tarifa de depósito.");
+            System.out.println("DepÃ³sito com envelope vazio Ã© proibido!!! DepÃ³sito com R$ " + valor + " Ã© invÃ¡lido.");
+            System.out.println("DepÃ³sitos vazios geram despesas e, convencionalmente, serÃ¡ cobrada tarifa de depÃ³sito.");
             this.saldo -= taxaMovimentacao;
             return true;
         } else 
@@ -117,7 +117,7 @@ public abstract class Conta
 
             this.saldo = this.saldo + valor;
             this.saldo = this.saldo - taxaMovimentacao;  // taxa cobrada por deposito
-            System.out.println("Depósito realizado com sucesso!!!");
+            System.out.println("DepÃ³sito realizado com sucesso!!!");
             return false;
 
         }

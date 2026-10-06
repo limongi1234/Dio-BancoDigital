@@ -53,7 +53,7 @@ public class SistemaInterno
             System.out.println("      |  0 - SAIR                   |");
             System.out.println("        ===========================\n");
             System.out.print("\n");
-            System.out.print("OPÇÃO --> ");
+            System.out.print("OPÃ‡ÃƒO --> ");
 
             opcao = sc.next();
 
@@ -74,7 +74,7 @@ public class SistemaInterno
                     {
                         System.out.print("Login efetuado! Bem vindo!");
                         System.out.print("\n");
-                        System.out.print("Quase lá¡, você será redirecionado...");
+                        System.out.print("Quase lÃ¡Â¡, vocÃª serÃ¡ redirecionado...");
                         Thread.sleep(2000);
                         System.out.print("\n");
                         //for each para pegar as contas
@@ -82,35 +82,35 @@ public class SistemaInterno
                         menuPorTipo(usuario, contaUsuario);
 
                     } else 
-                        System.out.print("Usuário não reconhecido, tente novamente\n");
+                        System.out.print("UsuÃ¡rio nÃ£o reconhecido, tente novamente\n");
                     break;
                 case "0":
-                    System.out.print("Até logo!\n");
+                    System.out.print("AtÃ© logo!\n");
                     System.exit(Integer.parseInt(opcao));
 
                 default:
-                    System.out.println("\n\nDigite opção 0 ou 1");
+                    System.out.println("\n\nDigite opÃ§Ã£o 0 ou 1");
                     break;
 
             }
         }
     }
 
-    // menu operações de conta
+    // menu operaÃ§Ãµes de conta
     public void menuOpConta(Usuario usuario, Conta contaUsuario) throws InterruptedException, IOException, NullPointerException 
     {
         int opcao;
         do 
         {
-            System.out.println("\n\n BANCO TEREBANK - MOVIMENTAÇÕES DE CONTA:");
+            System.out.println("\n\n BANCO TEREBANK - MOVIMENTAÃ‡Ã•ES DE CONTA:");
             System.out.println("\n                   ======================");
             System.out.println("                  |  1 - SAQUE           |");
-            System.out.println("                  |  2 - DEPÓSITO        |");
-            System.out.println("                  |  3 - TRANSFERÊNCIA   |");
+            System.out.println("                  |  2 - DEPÃ“SITO        |");
+            System.out.println("                  |  3 - TRANSFERÃŠNCIA   |");
             System.out.println("                  |  4 - MENU ANTERIOR   |");
             System.out.println("                  |  0 - SAIR            |");
             System.out.println("                   ======================\n");
-            System.out.print("OPÇÃO --> ");
+            System.out.print("OPÃ‡ÃƒO --> ");
             opcao = sc.nextInt();
             
             switch (opcao)
@@ -145,11 +145,11 @@ public class SistemaInterno
                     break;
 
                 case 3:
-                    //TRANSFERÃŠNCIAS
+                    //TRANSFERÃƒÂŠNCIAS
                     System.out.println("Quanto deseja transferir? ");
                     System.out.print("Valor: ");
                     double valorTransf = sc.nextDouble();
-                    System.out.print("Informe o cpf do titular da conta para transferÃªncia: ");
+                    System.out.print("Informe o cpf do titular da conta para transferÃƒÂªncia: ");
                     String cpfDestino = sc.next();
                     Conta contaDest = pegaConta(cpfDestino);
                     try 
@@ -167,11 +167,11 @@ public class SistemaInterno
                     menuPorTipo(usuario, contaUsuario);
                     break;
                 case 0:
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
                     System.out.print("\n");
                     System.exit(opcao);
                 default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
+                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
             }
 
 
@@ -184,13 +184,13 @@ public class SistemaInterno
         String opcao;
         do 
         {
-            System.out.println("\n\n BANCO TEREBANK - ÁREA DO CLIENTE:");
+            System.out.println("\n\n BANCO TEREBANK - ÃREA DO CLIENTE:");
             System.out.println("\n                   =============================");
-            System.out.println("                  |  1 - MOVIMENTAÇÕES DE CONTA  |");
-            System.out.println("                  |  2 - RELATÓRIOS              |");
+            System.out.println("                  |  1 - MOVIMENTAÃ‡Ã•ES DE CONTA  |");
+            System.out.println("                  |  2 - RELATÃ“RIOS              |");
             System.out.println("                  |  0 - SAIR                    |");
             System.out.println("                   =============================\n");
-            System.out.print("Opção --> ");
+            System.out.print("OpÃ§Ã£o --> ");
             opcao = sc.next();
             
             switch (opcao) 
@@ -204,11 +204,11 @@ public class SistemaInterno
                     menuRelatorioCliente(usuario, contaCliente);
                     break;
                 case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
                     System.out.print("\n");
                     System.exit(Integer.parseInt(opcao));
                 default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
+                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
 
             }
 
@@ -222,16 +222,16 @@ public class SistemaInterno
         String opcao;
         do 
         {
-            System.out.println("\n\n BANCO TEREBANK - RELATÓRIO :");
+            System.out.println("\n\n BANCO TEREBANK - RELATÃ“RIO :");
             System.out.println("\n                   ==========================================");
             System.out.println("                  |  1 - SALDO                                |");
-            System.out.println("                  |  2 - TRIBUTAÇÃO DE CONTA                  |");
-            System.out.println("                  |  3 - SIMULAÇÃO DE RENDIMENTO EM POUPANA   |");
+            System.out.println("                  |  2 - TRIBUTAÃ‡ÃƒO DE CONTA                  |");
+            System.out.println("                  |  3 - SIMULAÃ‡ÃƒO DE RENDIMENTO EM POUPANA   |");
             System.out.println("                  |  4 - MENU ANTERIOR                        |");
             System.out.println("                  |  5 - LOGIN COM OUTRA CONTA                |");
             System.out.println("                  |  0 - SAIR                                 |");
             System.out.println("                   ===========================================\n");
-            System.out.print("Opção --> ");
+            System.out.print("OpÃ§Ã£o --> ");
             opcao = sc.next();
             
             switch (opcao) 
@@ -241,15 +241,15 @@ public class SistemaInterno
                     break;
 
                 case "2":
-                    //				RELATORIO TRIBUTAÇÃO CONTA CORRENTE;
+                    //				RELATORIO TRIBUTAÃ‡ÃƒO CONTA CORRENTE;
                     File.relatorioTributacao("./temp/relatorioTribut/" + usuario.getNome() + "_" + contaCliente.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
                     break;
 
                 case "3":
-                    //				RELATORIO RENDIMENTO POUPANÇA;
-                    System.out.print("Qual valor você deseja simular? ");
+                    //				RELATORIO RENDIMENTO POUPANÃ‡A;
+                    System.out.print("Qual valor vocÃª deseja simular? ");
                     double valor = sc.nextDouble();
-                    System.out.print("Qual a duração do investimento? ");
+                    System.out.print("Qual a duraÃ§Ã£o do investimento? ");
                     int dias = sc.nextInt();
                     File.relatorioSimulacaoRendimento(valor, dias, "./temp/relatorioSimulacaoRendimento/" + usuario.getNome() + "_" + File.dataPath() + ".txt");
                     break;
@@ -262,11 +262,11 @@ public class SistemaInterno
                     menuPrincipal();
                     break;
                 case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
                     System.out.print("\n");
                     System.exit(Integer.parseInt(opcao));
                 default:
-                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
+                    System.out.println("\n\nDigite uma das opÃƒÂ§ÃƒÂµes listadas.");
 
             }
 
@@ -279,13 +279,13 @@ public class SistemaInterno
         String opcao;
         do 
         {
-            System.out.println("\n\n BANCO TEREBANK - ÁREA DO GERENTE:");
+            System.out.println("\n\n BANCO TEREBANK - ÃREA DO GERENTE:");
             System.out.println("\n       =============================");
-            System.out.println("       |  1 - MOVIMENTAÇÕES DE CONTA |");
-            System.out.println("       |  2 - RELATÓRIOS             |");
+            System.out.println("       |  1 - MOVIMENTAÃ‡Ã•ES DE CONTA |");
+            System.out.println("       |  2 - RELATÃ“RIOS             |");
             System.out.println("       |  0 - SAIR                   |");
             System.out.println("       =============================\n");
-            System.out.print("Opção --> ");
+            System.out.print("OpÃ§Ã£o --> ");
             opcao = sc.next();
             
             switch (opcao) 
@@ -299,11 +299,11 @@ public class SistemaInterno
                     menuRelatorioGerente(usuario, contaUsuario);
                     break;
                 case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
                     System.out.print("\n");
                     System.exit(Integer.parseInt(opcao));
                 default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
+                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
 
             }
 
@@ -317,17 +317,17 @@ public class SistemaInterno
         String opcao;
         do 
         {
-            System.out.println("\n\nBANCO TEREBANK - RELATÓRIO GERENTE :");
+            System.out.println("\n\nBANCO TEREBANK - RELATÃ“RIO GERENTE :");
             System.out.println("\n                  ==========================================");
             System.out.println("                  |  1 - SALDO                               |");
-            System.out.println("                  |  2 - TRIBUTAÇÃO DE CONTA                 |");
-            System.out.println("                  |  3 - SIMULAÇÃO DE RENDIMENTO EM POUPANÇA |");
-            System.out.println("                  |  4 - CONTAS NA MESMA AGÊNCIA             |");
+            System.out.println("                  |  2 - TRIBUTAÃ‡ÃƒO DE CONTA                 |");
+            System.out.println("                  |  3 - SIMULAÃ‡ÃƒO DE RENDIMENTO EM POUPANÃ‡A |");
+            System.out.println("                  |  4 - CONTAS NA MESMA AGÃŠNCIA             |");
             System.out.println("                  |  5 - MENU ANTERIOR                       |");
             System.out.println("                  |  6 - LOGIN COM OUTRA CONTA               |");
             System.out.println("                  |  0 - SAIR                                |");
             System.out.println("                   ==========================================\n");
-            System.out.print("Opção --> ");
+            System.out.print("OpÃ§Ã£o --> ");
             opcao = sc.next();
             
             switch (opcao) 
@@ -337,21 +337,21 @@ public class SistemaInterno
                     break;
 
                 case "2":
-                    //				RELATORIO TRIBUTAÇÃO CONTA CORRENTE;
+                    //				RELATORIO TRIBUTAÃ‡ÃƒO CONTA CORRENTE;
                     File.relatorioTributacao("./temp/relatorioTribut/" + usuario.getNome() + "_" + contaGerente.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
                     break;
 
                 case "3":
-                    //				RELATORIO RENDIMENTO POUPANÇA;
-                    System.out.print("Qual valor você deseja simular? ");
+                    //				RELATORIO RENDIMENTO POUPANÃ‡A;
+                    System.out.print("Qual valor vocÃª deseja simular? ");
                     double valor = sc.nextDouble();
-                    System.out.print("Qual a duração do investimento? ");
+                    System.out.print("Qual a duraÃ§Ã£o do investimento? ");
                     int dias = sc.nextInt();
                     File.relatorioSimulacaoRendimento(valor, dias, "./temp/relatorioSimulacaoRendimento/" + usuario.getNome() + "_" + File.dataPath() + ".txt");
                     break;
 
                 case "4":
-                    //				Relatório de contas na mesma agÃªncia em que este gerente trabalha
+                    //				RelatÃ³rio de contas na mesma agÃƒÂªncia em que este gerente trabalha
 
                     File.pegaContasAgencia(usuario.getAgencia(), "./temp/relatorioGerenteAg/" + usuario.getAgencia() + "_" + File.dataPath() + ".txt");
 
@@ -361,6 +361,116 @@ public class SistemaInterno
                     menuPorTipo(usuario, contaGerente);
                     break;
                 case "6":
+                    menuPrincipal();
+                    break;
+                case "0":
+                    System.out.print("AtÃƒÂ© logo, " + usuario.getNome() + "!");
+                    System.out.print("\n");
+                    System.exit(Integer.parseInt(opcao));
+                default:
+                    System.out.println("\n\nDigite uma das opÃƒÂ§ÃƒÂµes listadas.");
+
+            }
+
+        } while (true);
+
+    }
+
+    // menu diretor
+    public void menuDiretor(Usuario usuario, Conta contaUsuario) throws InterruptedException, IOException 
+    {
+
+        String opcao;
+        do 
+        {
+            System.out.println("\n\n BANCO TEREBANK - ÃREA DO DIRETOR:");
+            System.out.println("\n                   =============================");
+            System.out.println("                  |  1 - MOVIMENTAÃ‡Ã•ES DE CONTA |");
+            System.out.println("                  |  2 - RELATÃ“RIOS             |");
+            System.out.println("                  |  0 - SAIR                   |");
+            System.out.println("                   =============================\n");
+            System.out.print("OpÃ§Ã£o --> ");
+            opcao = sc.next();
+            
+            switch (opcao) 
+            {
+                case "1":
+                    menuOpConta(usuario, contaUsuario);
+                    break;
+
+                case "2":
+                    menuRelatorioDiretor(usuario, contaUsuario);
+                    break;
+
+                case "0":
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
+                    System.out.print("\n");
+                    System.exit(Integer.parseInt(opcao));
+                default:
+                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
+
+            }
+
+        } while (true);
+
+    }
+
+    // menu relatorio diretor
+    public void menuRelatorioDiretor(Usuario usuario, Conta contaDiretor) throws InterruptedException, IOException 
+    {
+        String opcao;
+        do 
+        {
+            System.out.println("\n\n BANCO TEREBANK - RELATÃ“RIO DIRETOR :");
+            System.out.println("\n                  ==========================================");
+            System.out.println("                  |  1 - SALDO                               |");
+            System.out.println("                  |  2 - TRIBUTAÃ‡ÃƒO DE CONTA                 |");
+            System.out.println("                  |  3 - SIMULAÃ‡ÃƒO DE RENDIMENTO EM POUPANÃ‡A |");
+            System.out.println("                  |  4 - RELATÃ“RIO DE CLIENTES DO BANCO      |");
+            System.out.println("                  |  5 - RELATÃ“RIO DE CLIENTES POR AGÃŠNCIA   |");
+            System.out.println("                  |  6 - MENU ANTERIOR                       |");
+            System.out.println("                  |  7 - LOGIN COM OUTRA CONTA               |");
+            System.out.println("                  |  0 - SAIR                                |");
+            System.out.println("                   ==========================================\n");
+            System.out.print("OpÃ§Ã£o --> ");
+            opcao = sc.next();
+            
+            switch (opcao)
+            {
+                case "1":
+                    File.relatorioDeSaldo(usuario, contaDiretor, "./temp/relatorioSaldo/" + usuario.getNome() + "_" + contaDiretor.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
+                    break;
+
+                case "2":
+                    //				RELATÃ“RIO TRIBUTAÃ‡Ã‚O CONTA CORRENTE;
+                    File.relatorioTributacao("./temp/relatorioTribut/" + usuario.getNome() + "_" + contaDiretor.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
+                    break;
+
+                case "3":
+                    //				RELATÃ“RIO RENDIMENTO POUPANÃ‡A;
+                    System.out.print("Qual valor vocÃª deseja simular? ");
+                    double valor = sc.nextDouble();
+                    System.out.print("Qual a duraÃƒÂ§ÃƒÂ£o do investimento? ");
+                    int dias = sc.nextInt();
+                    File.relatorioSimulacaoRendimento(valor, dias, "./temp/relatorioSimulacaoRendimento/" + usuario.getNome() + "_" + File.dataPath() + ".txt");
+                    break;
+
+                case "4":
+                    File.nomesOrdemAlfabetica("./temp/relatorioClientesOrdem/clientesOrdemAlfabetica" + File.dataPath() + ".txt");
+                    break;
+
+                case "5":
+                    System.out.print("Informe o nÃºmero da agÃªncia para consulta: ");
+                    int agencia = sc.nextInt();
+                    File.pegaContasAgencia(agencia, "./temp/relatorioDiretorAg/" + agencia + "_" + File.dataPath() + ".txt");
+                    break;
+
+                case "6":
+                    menuPorTipo(usuario, contaDiretor);
+                    break;
+
+                case "7":
+                    //VOLTA MENU PRINC.
                     menuPrincipal();
                     break;
                 case "0":
@@ -376,38 +486,35 @@ public class SistemaInterno
 
     }
 
-    // menu diretor
-    public void menuDiretor(Usuario usuario, Conta contaUsuario) throws InterruptedException, IOException 
-    {
-
+    // menu area presidente
+    public void menuPresidente(Usuario usuario, Conta contaPresidente) throws InterruptedException, IOException {
         String opcao;
-        do 
-        {
-            System.out.println("\n\n BANCO TEREBANK - ÁREA DO DIRETOR:");
+        do {
+            System.out.println("\n\n BANCO TEREBANK - ÃREA DO PRESIDENTE:");
             System.out.println("\n                   =============================");
-            System.out.println("                  |  1 - MOVIMENTAÇÕES DE CONTA |");
-            System.out.println("                  |  2 - RELATÓRIOS             |");
+            System.out.println("                  |  1 - MOVIMENTAÃ‡Ã•ES DE CONTA |");
+            System.out.println("                  |  2 - RELATÃ“RIOS             |");
             System.out.println("                  |  0 - SAIR                   |");
             System.out.println("                   =============================\n");
-            System.out.print("Opção --> ");
+            System.out.print("OpÃ§Ã£o --> ");
             opcao = sc.next();
             
             switch (opcao) 
             {
                 case "1":
-                    menuOpConta(usuario, contaUsuario);
+                    menuOpConta(usuario, contaPresidente);
                     break;
-
                 case "2":
-                    menuRelatorioDiretor(usuario, contaUsuario);
+                    //RELATÃ“RIO PRESIDENTE
+                    menuRelatorioPresidente(usuario, contaPresidente);
                     break;
 
                 case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
                     System.out.print("\n");
                     System.exit(Integer.parseInt(opcao));
                 default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
+                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
 
             }
 
@@ -415,40 +522,40 @@ public class SistemaInterno
 
     }
 
-    // menu relatorio diretor
-    public void menuRelatorioDiretor(Usuario usuario, Conta contaDiretor) throws InterruptedException, IOException 
+    // menu relatÃ³rio Presidente
+    public void menuRelatorioPresidente(Usuario usuario, Conta contaPresidente) throws InterruptedException, IOException 
     {
         String opcao;
-        do 
-        {
-            System.out.println("\n\n BANCO TEREBANK - RELATÓRIO DIRETOR :");
+        do {
+            System.out.println("\n\n BANCO TEREBANK - RELATÃ“RIO PRESIDENTE :");
             System.out.println("\n                  ==========================================");
             System.out.println("                  |  1 - SALDO                               |");
-            System.out.println("                  |  2 - TRIBUTAÇÃO DE CONTA                 |");
-            System.out.println("                  |  3 - SIMULAÇÃO DE RENDIMENTO EM POUPANÇA |");
-            System.out.println("                  |  4 - RELATÓRIO DE CLIENTES DO BANCO      |");
-            System.out.println("                  |  5 - RELATÓRIO DE CLIENTES POR AGÊNCIA   |");
-            System.out.println("                  |  6 - MENU ANTERIOR                       |");
-            System.out.println("                  |  7 - LOGIN COM OUTRA CONTA               |");
+            System.out.println("                  |  2 - TRIBUTAÃ‡ÃƒO DE CONTA                 |");
+            System.out.println("                  |  3 - SIMULAÃ‡ÃƒO DE RENDIMENTO EM POUPANÃ‡A |");
+            System.out.println("                  |  4 - RELATÃ“RIO DE CLIENTES DO BANCO      |");
+            System.out.println("                  |  5 - RELATÃ“RIO DE CLIENTES POR AGÃŠNCIA   |");
+            System.out.println("                  |  6 - RELATÃ“RIO DE CAPITAL TOTAL          |");
+            System.out.println("                  |  7 - MENU ANTERIOR                       |");
+            System.out.println("                  |  8 - LOGIN COM OUTRA CONTA               |");
             System.out.println("                  |  0 - SAIR                                |");
             System.out.println("                   ==========================================\n");
-            System.out.print("Opção --> ");
+            System.out.print("OpÃ§Ã£o --> ");
             opcao = sc.next();
             
-            switch (opcao)
+            switch (opcao) 
             {
                 case "1":
-                    File.relatorioDeSaldo(usuario, contaDiretor, "./temp/relatorioSaldo/" + usuario.getNome() + "_" + contaDiretor.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
+                    File.relatorioDeSaldo(usuario, contaPresidente, "./temp/relatorioSaldo/" + usuario.getNome() + "_" + contaPresidente.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
                     break;
 
                 case "2":
-                    //				RELATÓRIO TRIBUTAÇÂO CONTA CORRENTE;
-                    File.relatorioTributacao("./temp/relatorioTribut/" + usuario.getNome() + "_" + contaDiretor.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
+                    //				RELATORIO TRIBUTAÃ‡ÃƒO CONTA;
+                    File.relatorioTributacao("./temp/relatorioTribut/" + usuario.getNome() + "_" + contaPresidente.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
                     break;
 
                 case "3":
-                    //				RELATÓRIO RENDIMENTO POUPANÇA;
-                    System.out.print("Qual valor você deseja simular? ");
+                    //				RELATORIO RENDIMENTO POUPANÃƒÂ‡A;
+                    System.out.print("Qual valor vocÃª deseja simular? ");
                     double valor = sc.nextDouble();
                     System.out.print("Qual a duraÃ§Ã£o do investimento? ");
                     int dias = sc.nextInt();
@@ -460,114 +567,7 @@ public class SistemaInterno
                     break;
 
                 case "5":
-                    System.out.print("Informe o número da agência para consulta: ");
-                    int agencia = sc.nextInt();
-                    File.pegaContasAgencia(agencia, "./temp/relatorioDiretorAg/" + agencia + "_" + File.dataPath() + ".txt");
-                    break;
-
-                case "6":
-                    menuPorTipo(usuario, contaDiretor);
-                    break;
-
-                case "7":
-                    //VOLTA MENU PRINC.
-                    menuPrincipal();
-                    break;
-                case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
-                    System.out.print("\n");
-                    System.exit(Integer.parseInt(opcao));
-                default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
-
-            }
-
-        } while (true);
-
-    }
-
-    // menu area presidente
-    public void menuPresidente(Usuario usuario, Conta contaPresidente) throws InterruptedException, IOException {
-        String opcao;
-        do {
-            System.out.println("\n\n BANCO TEREBANK - ÁREA DO PRESIDENTE:");
-            System.out.println("\n                   =============================");
-            System.out.println("                  |  1 - MOVIMENTAÇÕES DE CONTA |");
-            System.out.println("                  |  2 - RELATÓRIOS             |");
-            System.out.println("                  |  0 - SAIR                   |");
-            System.out.println("                   =============================\n");
-            System.out.print("Opção --> ");
-            opcao = sc.next();
-            
-            switch (opcao) 
-            {
-                case "1":
-                    menuOpConta(usuario, contaPresidente);
-                    break;
-                case "2":
-                    //RELATÓRIO PRESIDENTE
-                    menuRelatorioPresidente(usuario, contaPresidente);
-                    break;
-
-                case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
-                    System.out.print("\n");
-                    System.exit(Integer.parseInt(opcao));
-                default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
-
-            }
-
-        } while (true);
-
-    }
-
-    // menu relatório Presidente
-    public void menuRelatorioPresidente(Usuario usuario, Conta contaPresidente) throws InterruptedException, IOException 
-    {
-        String opcao;
-        do {
-            System.out.println("\n\n BANCO TEREBANK - RELATÓRIO PRESIDENTE :");
-            System.out.println("\n                  ==========================================");
-            System.out.println("                  |  1 - SALDO                               |");
-            System.out.println("                  |  2 - TRIBUTAÇÃO DE CONTA                 |");
-            System.out.println("                  |  3 - SIMULAÇÃO DE RENDIMENTO EM POUPANÇA |");
-            System.out.println("                  |  4 - RELATÓRIO DE CLIENTES DO BANCO      |");
-            System.out.println("                  |  5 - RELATÓRIO DE CLIENTES POR AGÊNCIA   |");
-            System.out.println("                  |  6 - RELATÓRIO DE CAPITAL TOTAL          |");
-            System.out.println("                  |  7 - MENU ANTERIOR                       |");
-            System.out.println("                  |  8 - LOGIN COM OUTRA CONTA               |");
-            System.out.println("                  |  0 - SAIR                                |");
-            System.out.println("                   ==========================================\n");
-            System.out.print("Opção --> ");
-            opcao = sc.next();
-            
-            switch (opcao) 
-            {
-                case "1":
-                    File.relatorioDeSaldo(usuario, contaPresidente, "./temp/relatorioSaldo/" + usuario.getNome() + "_" + contaPresidente.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
-                    break;
-
-                case "2":
-                    //				RELATORIO TRIBUTAÇÃO CONTA;
-                    File.relatorioTributacao("./temp/relatorioTribut/" + usuario.getNome() + "_" + contaPresidente.getNumeroDaConta() + "_" + File.dataPath() + ".txt");
-                    break;
-
-                case "3":
-                    //				RELATORIO RENDIMENTO POUPANÃ‡A;
-                    System.out.print("Qual valor você deseja simular? ");
-                    double valor = sc.nextDouble();
-                    System.out.print("Qual a duração do investimento? ");
-                    int dias = sc.nextInt();
-                    File.relatorioSimulacaoRendimento(valor, dias, "./temp/relatorioSimulacaoRendimento/" + usuario.getNome() + "_" + File.dataPath() + ".txt");
-                    break;
-
-                case "4":
-                    File.nomesOrdemAlfabetica("./temp/relatorioClientesOrdem/clientesOrdemAlfabetica" + File.dataPath() + ".txt");
-                    break;
-
-                case "5":
-                    System.out.print("Informe o nÃºmero da agÃªncia para consulta: ");
+                    System.out.print("Informe o nÃƒÂºmero da agÃƒÂªncia para consulta: ");
                     int agencia = sc.nextInt();
                     File.pegaContasAgencia(agencia, "./temp/relatorioPresidenteAg/" + agencia + "_" + File.dataPath() + ".txt");
                     break;
@@ -586,11 +586,11 @@ public class SistemaInterno
                     menuPrincipal();
                     break;
                 case "0":
-                    System.out.print("Até logo, " + usuario.getNome() + "!");
+                    System.out.print("AtÃ© logo, " + usuario.getNome() + "!");
                     System.out.print("\n");
                     System.exit(Integer.parseInt(opcao));
                 default:
-                    System.out.println("\n\nDigite uma das opções listadas.");
+                    System.out.println("\n\nDigite uma das opÃ§Ãµes listadas.");
 
             }
 
@@ -598,7 +598,7 @@ public class SistemaInterno
 
     }
 
-    //Método verificar login
+    //MÃ©todo verificar login
     public Usuario verificaLogin(String cpf, String senha) 
     {
         for (Usuario user : File.getMapUsuario().values()) 
@@ -609,7 +609,7 @@ public class SistemaInterno
         return null;
     }
 
-    // Método pega conta
+    // MÃ©todo pega conta
     public Conta pegaConta(String cpf) 
     {
         for (Conta conta : File.getMapConta().values()) 

@@ -71,7 +71,7 @@ public abstract class Usuario
 	public void setId(int id) throws UsuarioException 
 	{
 		if (id <= 0)
-			throw new UsuarioException("O Id do usuário não pode ser zero ou número negativo");
+			throw new UsuarioException("O Id do usuÃ¡rio nÃ£o pode ser zero ou nÃºmero negativo");
 		this.id = id;		
 	}
     
